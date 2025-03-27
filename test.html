@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Real Time</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    h2 {
+      color: #666;
+      margin-top: -10px;
+    }
+
+    .flow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .step {
+      padding: 20px 30px;
+      color: white;
+      font-weight: bold;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+      margin: 0 -10px;
+      min-width: 150px;
+    }
+
+    .arch { background-color: #D9534F; }
+    .struct { background-color: #F0AD4E; }
+    .me { background-color: #5CB85C; }
+    .interior { background-color: #337AB7; }
+    .land { background-color: #8E44AD; }
+
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .category {
+      width: 180px;
+      text-align: left;
+      padding: 10px;
+    }
+
+    .category h3 {
+      color: #D9534F;
+      font-size: 16px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .category ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    .category li {
+      margin: 4px 0;
+    }
+
+    /* Custom colors per category */
+    .category.wall h3 { color: #F0AD4E; }
+    .category.ceiling h3 { color: #5CB85C; }
+    .category.door h3 { color: #337AB7; }
+    .category.misc h3 { color: #8E44AD; }
+
+  </style>
+</head>
+<body>
+  <h1>Dashboard Real Time</h1>
+  <h2>Preliminary Cost Estimate</h2>
+  <p><strong>BY REVIT</strong></p>
+
+  <div class="flow">
+    <div class="step arch">ARCHITECTURE</div>
+    <div class="step struct">STRUCTURE<br>RC./STEEL</div>
+    <div class="step me">M&E<br>EE.+SAN+AIR-CON</div>
+    <div class="step interior">INTERIOR<br>GRADE (A,B,C)</div>
+    <div class="step land">LANDSCAPE<br>HARD/SOFT</div>
+  </div>
+
+  <div class="categories">
+    <div class="category floor">
+      <h3>Floor</h3>
+      <ul>
+        <li>Polished</li>
+        <li>Tile</li>
+        <li>Wood</li>
+        <li>Artificial wood</li>
+        <li>Stone</li>
+        <li>Vinyl</li>
+      </ul>
+    </div>
+    <div class="category wall">
+      <h3>Wall</h3>
+      <ul>
+        <li>Wall Type</li>
+        <li>Aluminium Composite</li>
+        <li>Metal Siding</li>
+        <li>Curtain Wall</li>
+      </ul>
+    </div>
+    <div class="category ceiling">
+      <h3>Ceiling</h3>
+      <ul>
+        <li>Smooth Surface</li>
+        <li>Gypsum board</li>
+        <li>Aluminium Composite</li>
+        <li>Grill Strip</li>
+      </ul>
+    </div>
+    <div class="category door">
+      <h3>Door & Window</h3>
+      <ul>
+        <li>Plywood</li>
+        <li>Wood</li>
+        <li>Steel</li>
+        <li>Aluminium</li>
+      </ul>
+    </div>
+    <div class="category misc">
+      <h3>Miscellaneous</h3>
+      <ul>
+        <li>Waterproofing</li>
+        <li>Railing</li>
+        <li>Termite Control</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
